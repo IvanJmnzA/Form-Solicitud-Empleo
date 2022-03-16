@@ -90,51 +90,51 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class=" col-md-3">
                                 <label for="apellidoPsolicitante" class="form-label  required">Apellido Paterno</label>
-                                <input type="text" class="form-control" id="apellidoPsolicitante" name="sld_apellidoPsolicitante">
+                                <input type="text" class="form-control" id="apellidoPsolicitante" name="sld_apellidoPsolicitante" required>
                             </div>
                             <div class="col-md-3">
                                 <label for="apellidoMsolicitante" class="form-label required">Apellido Materno</label>
-                                <input type="text" class="form-control" id="apellidoMsolicitante" name="sld_apellidoMsolicitante">
+                                <input type="text" class="form-control" id="apellidoMsolicitante" name="sld_apellidoMsolicitante" required>
                             </div>
                             <div class="col-md-4">
                                 <label for="nombressolicitante" class="form-label required">Nombre (s)</label>
-                                <input type="text" class="form-control" id="nombressolicitante" name="sld_nombressolicitante">
+                                <input type="text" class="form-control" id="nombressolicitante" name="sld_nombressolicitante" required>
                             </div>
                             <div class="col-md-2">
                                 <label for="edadsolicitante" class="form-label required">Edad</label>
-                                <input type="text" class="form-control" id="edadsolicitante" name="sld_edadsolicitante">
+                                <input type="text" class="form-control" id="edadsolicitante" name="sld_edadsolicitante" required>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="direccionsolicitante" class="form-label required">Direccion</label>
-                                <input type="text" class="form-control" id="direccionsolicitante" name="sld_direccionsolicitante">
+                                <input type="text" class="form-control" id="direccionsolicitante" name="sld_direccionsolicitante" required>
                             </div>
                             <div class="col-md-4">
                                 <label for="coloniasolicitante" class="form-label required">Colonia</label>
-                                <input type="text" class="form-control" id="coloniasolicitante" name="sld_coloniasolicitante">
+                                <input type="text" class="form-control" id="coloniasolicitante" name="sld_coloniasolicitante" required>
                             </div>
                             <div class="col-md-1">
                                 <label for="codigopsolicitante" class="form-label required">C. Postal</label>
-                                <input type="text" class="form-control" id="codigopsolicitante" name="sld_codigopsolicitante">
+                                <input type="text" class="form-control" id="codigopsolicitante" name="sld_codigopsolicitante" required>
                             </div>
 
                             <div class="col-md-2">
                                 <label for="telsolicitante" class="form-label required">Telefono</label>
-                                <input type="text" class="form-control" id="telsolicitante" name="sld_telsolicitante">
+                                <input type="text" class="form-control" id="telsolicitante" name="sld_telsolicitante" required>
                             </div>
 
 
                             <div class="col-md-1">
                                 <label class=" required">Genero</label>
                                 <div class="form-check">
-                                    <input for="sex" type="radio" name="sld_sexo" id="sexmascu" value="sexomasculino">
+                                    <input for="sex" type="radio" name="sld_sexo" id="sexmascu" value="sexomasculino" required>
                                     <label class="form-check-label" for="sex">M</label><br>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="sex" type="radio" name="sld_sexo" id="sexfem" value="sexofemenino">
+                                    <input class="sex" type="radio" name="sld_sexo" id="sexfem" value="sexofemenino" required>
                                     <label class="form-check-label" for="sex">F</label>
                                 </div>
                             </div>
@@ -167,12 +167,12 @@ require_once('solicitud.modelo.php');
                                 <label>Vive con</label>
                                 <div class="form-check">
                                     <input type="radio" name="sld_vive_con" id="vivecon" value="conpadres">
-                                    <label class="form-check-label" for="vivecon">Sus padres</label>
+                                    <label class="form-check-label required" for="vivecon" required>Sus padres</label>
                                 </div>
 
                                 <div class="form-check">
                                     <input type="radio" name="sld_vive_con" id="confam" value="confamilia">
-                                    <label class="form-check-label" for="confam">Su familia</label>
+                                    <label class="form-check-label required" for="confam" required>Su familia</label>
                                 </div>
 
 
@@ -262,11 +262,11 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="curp" class="form-label required">CURP</label>
-                                <input type="text" class="form-control" id="curp" name="sld_curp" placeholder="">
+                                <input type="text" class="form-control" id="curp" name="sld_curp" placeholder="" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="apellidoM" class="form-label">Afore</label>
-                                <input type="text" class="form-control" id="inputPassword4" name="sld_afore" placeholder="">
+                                <input type="text" class="form-control" id="inputPassword4" name="sld_afore" placeholder="" required>
                             </div>
                         </div>
 
@@ -588,7 +588,7 @@ require_once('solicitud.modelo.php');
                             <div class="col-md-3">
                                 <label>Nombre de la escuela</label><br>
                                 <label for="nom_primaria" class="form-label  required">Primaria</label>
-                                <input type="text" class="form-control" id="nom_primaria" name="sld_nom_primaria">
+                                <input type="text" class="form-control" id="nom_primaria" name="sld_nom_primaria" required>
                             </div>
 
 
@@ -638,7 +638,7 @@ require_once('solicitud.modelo.php');
 
                             <div class="col-md-3">
                                 <label for="nom_secundaria" class="form-label required">Secundaria</label>
-                                <input type="text" class="form-control" id="nom_secundaria" name="sld_nom_secundaria">
+                                <input type="text" class="form-control" id="nom_secundaria" name="sld_nom_secundaria" required>
                             </div>
 
 
@@ -682,7 +682,7 @@ require_once('solicitud.modelo.php');
 
                             <div class="col-md-3">
                                 <label for="nom_preparatoria" class="form-label required">Preparatoria o Vocacional</label>
-                                <input type="text" class="form-control" id="nom_preparatoria" name="sld_nom_preparatoria">
+                                <input type="text" class="form-control" id="nom_preparatoria" name="sld_nom_preparatoria" required>
                             </div>
 
 
@@ -726,7 +726,7 @@ require_once('solicitud.modelo.php');
 
                             <div class="col-md-3">
                                 <label for="nom_profesional" class="form-label required">Profecional</label>
-                                <input type="text" class="form-control" id="nom_profesional" name="sld_nom_profesional">
+                                <input type="text" class="form-control" id="nom_profesional" name="sld_nom_profesional" required>
                             </div>
 
 
@@ -860,11 +860,11 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class=" col-md-6">
                                 <label for="idiom_domina" class="form-label required">¿Que idiomas dominas?</label>
-                                <input type="text" class="form-control" id="idiom_domina" name="sld_idiom_domina">
+                                <input type="text" class="form-control" id="idiom_domina" name="sld_idiom_domina" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="funofic_domina" class="form-label required">¿Que funciones de oficina domina?</label>
-                                <input type="text" class="form-control" id="funofic_domina" name="sld_funofic_domina">
+                                <input type="text" class="form-control" id="funofic_domina" name="sld_funofic_domina" required>
                             </div>
 
                         </div>
@@ -874,12 +874,12 @@ require_once('solicitud.modelo.php');
                             <div class="col-md-6">
                                 <label for="maq_ofi_domina" class="form-label required">Maquinas de oficina que sepa
                                     manejar</label>
-                                <input type="text" class="form-control" id="maq_ofi_domina" name="sld_maq_ofi_domina">
+                                <input type="text" class="form-control" id="maq_ofi_domina" name="sld_maq_ofi_domina" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label for="soft_domina" class="form-label required">Software que domina</label>
-                                <input type="text" class="form-control" id="soft_domina" name="sld_soft_domina">
+                                <input type="text" class="form-control" id="soft_domina" name="sld_soft_domina" required>
                             </div>
 
                         </div>
@@ -888,7 +888,7 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class="col-md-12">
                                 <label for="otras_fun_domina" class="form-label required">Otras funciones que domina</label>
-                                <input type="text" class="form-control" id="otras_fun_domina" name="sld_otras_fun_domina">
+                                <input type="text" class="form-control" id="otras_fun_domina" name="sld_otras_fun_domina" required>
                             </div>
                         </div>
                     </div>
@@ -1447,19 +1447,19 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class=" col-md-3">
 
-                                <input type="text" class="form-control" id="nom_ref1" name="sld_nom_ref1">
+                                <input type="text" class="form-control" id="nom_ref1" name="sld_nom_ref1" required>
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" id="dir_ref1" name="sld_dir_ref1">
+                                <input type="text" class="form-control" id="dir_ref1" name="sld_dir_ref1" required>
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="tel_ref1" name="sld_tel_ref1">
+                                <input type="text" class="form-control" id="tel_ref1" name="sld_tel_ref1" required>
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="ocup_ref1" name="sld_ocup_ref1">
+                                <input type="text" class="form-control" id="ocup_ref1" name="sld_ocup_ref1" required>
                             </div>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="tiempocono_ref1" name="sld_tiempocono_ref1">
+                                <input type="text" class="form-control" id="tiempocono_ref1" name="sld_tiempocono_ref1" required>
                             </div>
 
                         </div>
@@ -1469,23 +1469,23 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class=" col-md-3">
                                 <label></label>
-                                <input type="text" class="form-control" id="nom_ref2" name="sld_nom_ref2">
+                                <input type="text" class="form-control" id="nom_ref2" name="sld_nom_ref2" required>
                             </div>
                             <div class="col-md-3">
                                 <label></label>
-                                <input type="text" class="form-control" id="dir_ref2" name="sld_dir_ref2">
+                                <input type="text" class="form-control" id="dir_ref2" name="sld_dir_ref2" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="tel_ref2" name="sld_tel_ref2">
+                                <input type="text" class="form-control" id="tel_ref2" name="sld_tel_ref2" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="ocup_ref2" name="sld_ocup_ref2">
+                                <input type="text" class="form-control" id="ocup_ref2" name="sld_ocup_ref2" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="tiempocono_ref2" name="sld_tiempocono_ref2">
+                                <input type="text" class="form-control" id="tiempocono_ref2" name="sld_tiempocono_ref2" required>
                             </div>
 
                         </div>
@@ -1497,23 +1497,23 @@ require_once('solicitud.modelo.php');
                         <div class="row">
                             <div class=" col-md-3">
                                 <label></label>
-                                <input type="text" class="form-control" id="nom_ref3" name="sld_nom_ref3">
+                                <input type="text" class="form-control" id="nom_ref3" name="sld_nom_ref3" required>
                             </div>
                             <div class="col-md-3">
                                 <label></label>
-                                <input type="text" class="form-control" id="dir_ref3" name="sld_dir_ref3">
+                                <input type="text" class="form-control" id="dir_ref3" name="sld_dir_ref3" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="tel_ref3" name="sld_tel_ref3">
+                                <input type="text" class="form-control" id="tel_ref3" name="sld_tel_ref3" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="ocup_ref3" name="sld_ocup_ref3">
+                                <input type="text" class="form-control" id="ocup_ref3" name="sld_ocup_ref3" required>
                             </div>
                             <div class="col-md-2">
                                 <label></label>
-                                <input type="text" class="form-control" id="tiempocono_ref3" name="sld_tiempocono_ref3">
+                                <input type="text" class="form-control" id="tiempocono_ref3" name="sld_tiempocono_ref3" required>
                             </div>
                         </div>
                     </div>
@@ -1537,7 +1537,7 @@ require_once('solicitud.modelo.php');
                         </div>
 
 
-                        <div class="row">
+                        <div class="row" required>
 
                             <div class="col-md-2">
 
@@ -1569,7 +1569,7 @@ require_once('solicitud.modelo.php');
 
                         <div class="row">
                             <label for="algunpariente" class="form-label required">¿Algun pariente trabaja en esta
-                                empresa?</label>
+                                empresa? required</label>
                         </div>
 
                         <div class="row">
@@ -2050,92 +2050,9 @@ require_once('solicitud.modelo.php');
             $procesa_solicitud->ctrNuevaSolicitudEmp();
 
             ?>
-<!--         
+      
             
-                if(!document.querySelector('input[name="sld_sexo"]:checked')) {
-                alert('Error, rellena el campo Genero');
-                hasError = true;
-                }
-
-
-                if(!document.querySelector('input[name="sld_nacionalidad"]:checked')) {
-                alert('Error, rellena el campo Nacionalidad');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_vive_con"]:checked')) {
-                alert('Error, rellena el campo Vive con');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_estado_civil"]:checked')) {
-                alert('Error, rellena el campo Estado Civil');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_licencia"]:checked')) {
-                alert('Error, rellena el campo Licencia');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_salud_estado"]:checked')) {
-                alert('Error, rellena el campo Estado de Salud');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_enf_cronica"]:checked')) {
-                alert('Error, rellena el campo ¿Padece alguna enfermedad cronica?');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_est_vida_padre"]:checked')) {
-                alert('Error, rellena el campo requerido');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_est_vida_madre"]:checked')) {
-                alert('Error, rellena el campo requerido');
-                hasError = true;
-                }
-                
-                if(!document.querySelector('input[name="sld_est_vida_espos"]:checked')) {
-                alert('Error, rellena el campo requerido');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_soli_info"]:checked')) {
-                alert('Error, rellena el campo requerido');
-                hasError = true;
-                }
-
-                if(!document.querySelector('input[name="sld_como_se_entero_rb"]:checked')) {
-                alert('Error, rellena el campo requerido');
-                hasError = true;
-                }
-
-                 if(!document.querySelector('input[name="sld_sexo"]:checked')) {
-                 alert('Error, rellena el campo Genero');
-                 hasError = true;
-                 }
-
-                 if(!document.querySelector('input[name="sld_sexo"]:checked')) {
-                 alert('Error, rellena el campo Genero');
-                 hasError = true;
-                 }
-
-                 if(!document.querySelector('input[name="sld_sexo"]:checked')) {
-                 alert('Error, rellena el campo Genero');
-                 hasError = true;
-                 }
-
-                 if(!document.querySelector('input[name="sld_sexo"]:checked')) {
-                 alert('Error, rellena el campo Genero');
-                 hasError = true;
-                 }
-
-                 if(hasError) event.preventDefault(); -->
-           
-            
+               
 
         </form>
 

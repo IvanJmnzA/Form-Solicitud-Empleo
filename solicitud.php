@@ -1,14 +1,6 @@
 <?php
 
 //require('config.php');
-
-
-
-
-
-
-
-
 //---------------SOLICITUD DE EMPLEO--------------------
 $sld_fechasolicitud = $_POST['sld_fechasolicitud'];
 $sld_puestosolicitud = $_POST['sld_puestosolicitud'];
@@ -26,14 +18,6 @@ $sld_sol_empleo_array = array(
 $solicitud_empleo_json = json_encode($sld_sol_empleo_array, true);
 
 // SolicitudControlador
-
-
-
-
-
-
-
-
 
 
 
